@@ -1,0 +1,211 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    align-items: center;
+}
+
+header .logo {
+    height: 40px;
+}
+
+header select, header input, header button {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar button, #sidebar ul {
+    margin: 20px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #141414;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 300px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e50914;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #f40612;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.promo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.promo video {
+    width: 100%;
+    height: auto;
+}
+
+.promo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color-red;
+}
+
+.promo button, .promo input {
+    margin: 10px;
+    padding: 10px;
+}
+
+.image-slider, .card-slider {
+    margin: 20px 0;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 500px;
+}
+
+.card-slider {
+    display: flex;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 0 0 25%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height:50% ;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
